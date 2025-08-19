@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Tool</title>
+    <script>
+    tailwind = window.tailwind || {};
+    tailwind.config = {
+      darkMode: 'class', // use class strategy so toggling `document.documentElement` works
+      theme: { extend: {} }
+    };
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+    <header class="w-full bg-gray-600 text-white p-2 ">
+        <div class="flex justify-between py-3">
+            <h1 class="font-bold text-2xl">SaaS Tools</h1>
+            <nav class="flex space-x-8 text-xl" aria-label="Main navigation">
+                <a href="#feature" class="hover:underline hover:text-red-900 transition hover:font-semibold">Features</a>
+                <a href="#pricing" class="hover:underline hover:text-red-900 transition hover:font-semibold">Pricing</a>
+                <a href="#contact" class="hover:underline hover:text-red-900 transition hover:font-semibold">Contact</a>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="bg-red-600 min-h-screen flex flex-col justify-center items-center text-white text-center px-4">
+        <h2 class="font-semibold text-4xl mb-4">Revolutionizing your work with SaaS Tools</h2>
+        <p class="mb-6">Smart. Fast. Secure. Built for the modern professional.</p>
+        <a href="#pricing" class="bg-white px-6 py-2 rounded-md text-black hover:bg-gray-200 transition">Get Started</a>
+    </section>
+
+    <main>
+        <section id="feature" class="bg-gray-200 w-full min-h-screen flex flex-col px-4 py-16">
+            <h2 class="text-center text-3xl font-bold mb-12">Features</h2>
+            <div class="grid grid-cols-1 gap-10 overflow">
+                <article class="bg-white rounded-lg p-8 border-2 border-red-400">
+                    <h3 class="text-center font-bold text-2xl mb-3 text-red-600">Cloud-Based Access</h3>
+                    <p class="text-center">Work from anywhere with real-time access to your tools and data.<br>No installations needed.</p>
+                </article>
+                <article class="bg-white rounded-lg p-8 border-2 border-red-400">
+                    <h3 class="text-center font-bold text-2xl mb-3 text-red-600">Seamless Collaboration</h3>
+                    <p class="text-center">Keep teams connected with shared workspaces and live updates.<br>Centralized communication.</p>
+                </article>
+                <article class="bg-white rounded-lg p-8 border-2 border-red-400">
+                    <h3 class="text-center font-bold text-2xl mb-3 text-red-600">Scalable Performance</h3>
+                    <p class="text-center">Easily adapt as your business grows with flexible plans and powerful automation.</p>
+                </article>
+            </div>
+        </section>
+
+ 
+        <section id="pricing" class="bg-gray-600 flex flex-col w-full min-h-screen py-16 px-4">
+            <h2 class="text-center font-bold text-white text-3xl mb-12">Choose Your Plan</h2>
+            <div class="grid grid-cols-1 gap-10 text-center">
+                <div class="bg-white shadow p-8 rounded-lg">
+                    <h3 class="font-bold text-2xl mb-3 text-gray-600">Basic</h3>
+                    <p class="font-semibold mb-3">Perfect for individuals and freelancers</p>
+                    <p class="mb-3 text-2xl font-bold text-red-600">$9/mo</p>
+                    <ul class="mb-3 space-y-2 text-gray-600 font-semibold">
+                        <li>• Access to core features</li>
+                        <li>• Cloud sync</li>
+                        <li>• Email support</li>
+                    </ul>
+                    <button class="bg-red-600 text-white w-48 h-12 rounded-xl hover:bg-red-700 transition">Get Basic</button>
+                </div>
+
+                <div class="bg-white shadow p-8 rounded-lg">
+                    <h3 class="font-bold text-2xl mb-3 text-gray-600">Pro</h3>
+                    <p class="font-semibold mb-3">Best for teams and professionals</p>
+                    <p class="mb-3 text-2xl font-bold text-red-600">$29/mo</p>
+                    <ul class="mb-3 space-y-2 text-gray-600 font-semibold">
+                        <li>• All Basic features</li>
+                        <li>• AI insights</li>
+                        <li>• Priority support</li>
+                    </ul>
+                    <button class="bg-red-600 text-white w-48 h-12 rounded-xl hover:bg-red-700 transition">Get Pro</button>
+                </div>
+            </div>
+        </section>
+
+      
+        <section id="contact" class="px-4 py-16 text-center">
+            <h2 class="text-3xl font-bold mb-9">Stay in Touch</h2>
+            <p class="text-center text-gray-600 font-semibold mb-3">Sign up for updates and special offers.</p>
+            <form class="flex flex-col items-center space-y-3">
+                <label for="email" class="sr-only">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" class="w-full p-2 rounded-lg border-2 border-gray-700 focus:outline-none focus:border-red-600" required>
+                <button class="bg-red-600 text-white w-48 h-12 rounded-xl hover:bg-red-700 transition">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+  
+    <footer class="bg-gray-600 text-white">
+        <div class="flex flex-col md:justify-between p-4 space-y-6 md:space-y-0">
+            <div>
+                <h3 class="text-2xl font-bold mb-2">SuperSync</h3>
+                <p class="text-sm mb-3">A powerful SaaS platform to simplify collaboration and boost productivity.</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-2 text-xl">Product</h4>
+                <ul class="space-y-1 text-sm mb-3">
+                    <li><a href="#feature" class="hover:underline">Features</a></li>
+                    <li><a href="#pricing" class="hover:underline">Pricing</a></li>
+                    <li><a href="#" class="hover:underline">Integrations</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-2 text-xl">Company</h4>
+                <ul class="space-y-1 text-sm mb-3">
+                    <li><a href="#" class="hover:underline">About Us</a></li>
+                    <li><a href="#" class="hover:underline">Careers</a></li>
+                    <li><a href="#contact" class="hover:underline">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-2 text-xl">Connect</h4>
+                <div class="flex space-x-4 text-xl">
+                    <a href="#" aria-label="Twitter" class="hover:text-blue-400">🐦</a>
+                    <a href="#" aria-label="Facebook" class="hover:text-blue-500">📘</a>
+                    <a href="#" aria-label="Instagram" class="hover:text-pink-500">📸</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-500 p-4 text-center text-gray-300">
+            © 2025 SuperSync. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

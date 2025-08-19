@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-900">
+  <h1 class="text-2xl text-center mb-3 text-white font-bold">Contact Form</h1>
+  <div>
+    <form action="" class=" w-full sm:w-1/2 lg:w-1/4 h-screen flex flex-col gap-4 py-4 px-3 text-white gap-3">
+        <h1>
+            Full Name *
+        </h1>
+      <input
+        type="text"
+        required
+        class="bg-transparent border border-white rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue"
+      />
+      <h1>
+        Email Address *
+      </h1>
+      <input
+        type="email"
+        required
+        class="bg-transparent border border-white rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue"
+      />
+      <h1>
+        Subject *
+      </h1>
+      <input
+        type="text" 
+        required
+        class="bg-transparent border border-white rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue"
+      />
+      <h1>
+        Message *
+      </h1>
+      <textarea
+        required
+        class="resize-none border bg-transparent border-white rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue "
+      ></textarea>
+      <input
+        type="submit"
+        value="Send"
+        class="bg-blue-700 text-white px-4 py-2 mt-2 rounded cursor-pointer hover:bg-blue-800 transition w-20"
+      />
+    </form>
+  </div>
+</body>
+</html>

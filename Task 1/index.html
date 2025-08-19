@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible Sidebar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="toggleSidebar" class="toggle-btn">☰</button>
+   
+    <aside id="sidebar" class="sidebar">
+        <h2 class="sidebar-logo">My Logo</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Contacts</a>
+            <a href="#">Settings</a>
+            <a href="#">Info</a>
+            <a href="#">Sign out</a>
+        </nav>
+    </aside>
+    
+    <main class="main-content">
+        <h2>Welcome</h2>
+    </main>
+  
+    <script>
+        const togglebutton = document.getElementById('toggleSidebar');
+        const sidebar = document.getElementById('sidebar');
+
+        togglebutton.addEventListener('click', function(){
+            sidebar.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
